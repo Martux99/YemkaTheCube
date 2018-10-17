@@ -28,7 +28,7 @@ GameObject:
   - component: {fileID: 114333594687908252}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1114842435887578}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 682cf72a1a5e70248898459cf772b1b3, type: 3}
   m_Name: 
@@ -142,11 +142,15 @@ MonoBehaviour:
   player: {fileID: 4843402409708400}
   hector: {x: 0, y: 0, z: 0}
   whereto: {x: 0, y: 0, z: 0}
+  rb: {fileID: 54474725255700886}
   grounded: 0
   direccion: 0
   notouch: 1
   pelon: 1
   cuenta: 0
+  sidewaysMov: 16
+  TiempodeInversion: 4
+  jumpForce: 30000
 --- !u!114 &114399546655803536
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -161,4 +165,4 @@ MonoBehaviour:
   rb: {fileID: 54474725255700886}
   forwardForce: 9500
   sidewaysForce: 200
-  maxForce: 1000
+  maxForce: 100
