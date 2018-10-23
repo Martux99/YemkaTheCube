@@ -19,6 +19,12 @@ public class PlayerMovemento : MonoBehaviour {
     public float jumpForce;
     bool invertido = false;
 
+
+
+    private void Awake()
+    {
+        UnityEngine.Physics.gravity = new Vector3(0, -29.81f, 0);
+    }
     void FixedUpdate()
     { 
         cuenta = Input.touchCount;

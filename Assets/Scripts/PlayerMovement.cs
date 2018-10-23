@@ -39,10 +39,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(0f, 0f, rb.velocity.z);
         }
-        if (rb.position.y < -1f)
+        /*if (rb.position.y < -1f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
-
+        */
     }
 }
