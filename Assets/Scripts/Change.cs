@@ -23,7 +23,7 @@ public class Change : MonoBehaviour {
     IEnumerator TheRealChange()
     {
         rotado = true;
-        FindObjectOfType<PlayerMovement>().forwardForce = -8000f;
+        FindObjectOfType<PlayerMovemento>().forwardForce = -8000f;
         yield return (new WaitForSeconds(0.5f));
         UnityEngine.Physics.gravity = new Vector3(0, UnityEngine.Physics.gravity.y * -1, 0);
         FindObjectOfType<FollowPlayer>().offset= new Vector3(0,1,5);
@@ -33,6 +33,6 @@ public class Change : MonoBehaviour {
     {
         yield return (new WaitForSeconds(1));
         rotado = false;
-        FindObjectOfType<PlayerMovement>().forwardForce = -2000f;
+        FindObjectOfType<PlayerMovemento>().forwardForce = -2000f;
     }
 }
