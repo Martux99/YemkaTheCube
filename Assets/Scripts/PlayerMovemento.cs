@@ -31,6 +31,10 @@ public class PlayerMovemento : MonoBehaviour {
     }
     void FixedUpdate()
     {
+        if (transform.position.y < -3)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
         if (rb.velocity.z < maxForce)
         {
             rb.AddForce(0, 0, forwardForce * Time.deltaTime);
