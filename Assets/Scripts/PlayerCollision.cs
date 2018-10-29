@@ -2,7 +2,7 @@
 
 public class PlayerCollision : MonoBehaviour {
 
-    public PlayerMovement movement;
+    public PlayerMovemento movement;
 	
 	// Update is called once per frame
 	void OnCollisionEnter(Collision collisionInfo)

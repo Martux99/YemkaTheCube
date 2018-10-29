@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 65967080333736150}
   - component: {fileID: 23350253691055064}
   - component: {fileID: 54474725255700886}
-  - component: {fileID: 114399546655803536}
   - component: {fileID: 114273093895150602}
   - component: {fileID: 114333594687908252}
   m_Layer: 0
@@ -214,7 +213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08a6200dc4c374141a82085cd4fdb5eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movement: {fileID: 114399546655803536}
+  movement: {fileID: 114333594687908252}
 --- !u!114 &114333594687908252
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -239,20 +238,7 @@ MonoBehaviour:
   sidewaysMov: 16
   TiempodeInversion: 4
   jumpForce: 50000
---- !u!114 &114399546655803536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1114842435887578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 442b928c67dfe9e4db8400618cf7daeb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 54474725255700886}
   forwardForce: 9500
-  sidewaysForce: 200
   maxForce: 100
 --- !u!114 &114545898481058986
 MonoBehaviour:

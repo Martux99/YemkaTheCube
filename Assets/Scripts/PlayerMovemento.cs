@@ -19,6 +19,10 @@ public class PlayerMovemento : MonoBehaviour {
     public float jumpForce;
     bool invertido = false;
 
+    public float forwardForce = 2000f;
+    public float maxForce = 1000f;
+    private bool isFalling = false;
+
 
 
     private void Awake()
@@ -26,7 +30,15 @@ public class PlayerMovemento : MonoBehaviour {
         UnityEngine.Physics.gravity = new Vector3(0, -29.81f, 0);
     }
     void FixedUpdate()
-    { 
+    {
+        if (transform.position.y < -3)
+        {
+            FindObjectOfType<GameManager>().EndGame();
+        }
+        if (rb.velocity.z < maxForce)
+        {
+            rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+        }
         cuenta = Input.touchCount;
         if (cuenta == 1)
         {

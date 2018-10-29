@@ -356,6 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   restartDelay: 1
   completeLevelUI: {fileID: 1907514374}
+  DeathCount: 0
 --- !u!4 &934290332
 Transform:
   m_ObjectHideFlags: 0
@@ -369,6 +370,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/Scenes/Pruebas.unity
+=======
+--- !u!1001 &989081593
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4843402409708400, guid: c249636c879205e49b1999b90b93c297, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114399546655803536, guid: c249636c879205e49b1999b90b93c297,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114333594687908252, guid: c249636c879205e49b1999b90b93c297,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23350253691055064, guid: c249636c879205e49b1999b90b93c297,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5bfb134f8c09540428a35339e29e39dc, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c249636c879205e49b1999b90b93c297, type: 2}
+  m_IsPrefabAsset: 0
+>>>>>>> a9aa837c68dd92ede0918732cee1299f0a1a336c:Assets/Scenes/New Scene.unity
 --- !u!1 &1294139160
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,6 +708,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 179783612}
   scoreText: {fileID: 1657176895}
+  ArcadeFire: 0
+  gameManager: {fileID: 0}
 --- !u!114 &1657176895
 MonoBehaviour:
   m_ObjectHideFlags: 0
