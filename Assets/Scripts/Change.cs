@@ -38,11 +38,10 @@ public class Change : MonoBehaviour {
         luz2.gameObject.SetActive(true);
         yield return (new WaitForSeconds(1));
         rotado = false;
-<<<<<<< HEAD:Assets/Change.cs
+
         FindObjectOfType<PlayerMovement>().forwardForce = -9500f;
         FindObjectOfType<PlayerMovemento>().jumpForce = -50000f;
-=======
         FindObjectOfType<PlayerMovemento>().forwardForce = -2000f;
->>>>>>> a9aa837c68dd92ede0918732cee1299f0a1a336c:Assets/Scripts/Change.cs
+
     }
 }
