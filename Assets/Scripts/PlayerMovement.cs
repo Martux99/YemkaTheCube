@@ -13,7 +13,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(rb.velocity.z<maxForce)
+        if(rb.velocity.z<maxForce && rb.velocity.z > -maxForce)
         rb.AddForce(0, 0, forwardForce * Time.deltaTime);
  
         if (Input.GetKey("d"))
@@ -39,10 +39,10 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector3(0f, 0f, rb.velocity.z);
         }
-        /*if (rb.position.y < -1f)
+        if (rb.position.y < -20f || rb.position.y > 20f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }
-        */
+        
     }
 }

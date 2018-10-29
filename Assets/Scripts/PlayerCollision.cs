@@ -9,8 +9,10 @@ public class PlayerCollision : MonoBehaviour {
     {
         if(collisionInfo.gameObject.tag=="Obstacle")
         {
+            
             movement.enabled=false;
             FindObjectOfType<GameManager>().EndGame();
+
         }
     }
 		

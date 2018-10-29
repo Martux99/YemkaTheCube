@@ -32,11 +32,11 @@ public class PlayerMovemento : MonoBehaviour {
         {
             notouch = false;
             Touch touch = (Input.GetTouch(0));
-            if (Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10)).x < 0)
+            if (Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10)).x < rb.transform.position.x)
             {
                 direccion = false;
             }
-            if (Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10)).x > 0)
+            if (Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, 0, 10)).x > rb.transform.position.x)
             {
                 direccion = true;
             }
